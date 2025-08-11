@@ -87,4 +87,13 @@ extra_css:
 
 # If using awesome-pages plugin, remove this section and use .pages file.
 nav:
-  - 'csuc-workshop': 'index.md'
+  - 'Home': 'index.md'
+  - 'Workshop':
+    - 'Ground Zero Check': 'ground-zero.md'
+    - 'Create First Repo': 'first-repo.md'
+    - 'Convert Existing Project': 'convert-project.md'
+    - 'GitHub Actions Setup': 'github-actions.md'
+    - 'Reflection & Next Steps': 'reflection.md'
+  - 'Reference Guides':
+    - '.gitignore Templates': 'gitignore-templates.md'
+    - 'Troubleshooting': 'troubleshooting.md'
