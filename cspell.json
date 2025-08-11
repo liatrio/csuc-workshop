@@ -1,0 +1,35 @@
+{
+  "files": [
+    "**",
+    ".*/**"
+  ],
+  "ignorePaths": [
+    ".git",
+    ".gitignore",
+    "./docs/assets/**",
+    "./docs/custom-theme/**",
+    "CHANGELOG.md",
+    "./site/**",
+    "./mkdocs.yml",
+    "./CODEOWNERS",
+    "./catalog-info.yaml",
+    ".cache/**",
+    "./Brewfile.lock.json",
+    "./Makefile",
+    "./pyproject.toml",
+    "./cspell.json"
+  ],
+  "words": [
+    "autoplay",
+    "liatr",
+    "Liatrian",
+    "Liatrians",
+    "liatrio",
+    "mkdocs",
+    "neoteroi",
+    "spantable",
+    "workstream",
+    "mitigations"
+  ]
+}
+

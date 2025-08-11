@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "csuc-workshop"
+version = "0.1.0"
+description = "Workshop geared towards college students"
+authors = ["Joshua Burns <joshua.burns@liatrio.com>"]
+license = "Apache-2.0"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+mkdocs = "^1.5.2"
+mkdocs-material = "^9.3.1"
+neoteroi-mkdocs = "^1.0.5"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

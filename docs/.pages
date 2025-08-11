@@ -1,0 +1,5 @@
+# Example .pages file. Use to configure nav and sidebars
+# arrange:
+#   - index.md # Home
+#   - Monthly Feedback
+#   - Contributing

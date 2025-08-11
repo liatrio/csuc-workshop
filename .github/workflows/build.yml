@@ -1,0 +1,97 @@
+---
+name: build and publish
+
+on:
+    pull_request:
+        branches: [main]
+    push:
+        branches: [main]
+
+jobs:
+    build:
+        name: build
+        runs-on: ubuntu-latest
+        permissions:
+            contents: write
+            deployments: write
+        steps:
+            - name: checkout code
+              uses: actions/checkout@v4
+              with:
+                  fetch-depth: 0
+            - name: setup python
+              uses: actions/setup-python@v5
+              with:
+                python-version: '3.11'
+            - name: setup poetry
+              uses: Gr1N/setup-poetry@v8
+
+            - name: install dependencies and build
+              run: make build
+
+            - name: upload pages artifact
+              if: ${{ github.ref == 'refs/heads/main' }}
+              uses: actions/upload-pages-artifact@v3
+              with:
+                path: site/
+
+    go-semantic-release:
+        if: ${{ github.ref == 'refs/heads/main' }}
+        name: go-semantic-release
+        needs: [build]
+        runs-on: ubuntu-latest
+        permissions:
+            contents: write
+        steps:
+            - name: Run go-semantic-release
+              uses: go-semantic-release/action@v1
+              id: go-semantic-release
+              with:
+                  github-token: ${{ secrets.GITHUB_TOKEN }}
+                  changelog-generator-opt: emojis=true
+                  allow-initial-development-versions: true
+
+            - name: Get latest release
+              if: steps.go-semantic-release.outputs.version != ''
+              id: get_latest_release
+              run: |
+                response=$(curl -s -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" -H "Accept: application/vnd.github.v3+json" "https://api.github.com/repos/${{ github.repository }}/releases/latest")
+                upload_url=$(echo "$response" | jq -r '.upload_url')
+                if [ "$upload_url" = "null" ]; then
+                  echo "::error::Upload URL is null for the latest release."
+                  exit 1
+                fi
+                echo "UPLOAD_URL=$upload_url" >> $GITHUB_ENV
+
+            - name: Download build artifact
+              if: steps.go-semantic-release.outputs.version != ''
+              uses: actions/download-artifact@v4
+              with:
+                path: site/
+
+            - name: Upload Release Asset
+              if: steps.go-semantic-release.outputs.version != ''
+              uses: actions/upload-release-asset@v1.0.2
+              env:
+                GITHUB_TOKEN: ${{ github.token }}
+                UPLOAD_URL: ${{ env.UPLOAD_URL }}
+              with:
+                upload_url: ${{ env.UPLOAD_URL }}
+                asset_path: site/github-pages/artifact.tar
+                asset_name: artifact.tar
+                asset_content_type: application/zip
+
+    deploy:
+        if: ${{ github.ref == 'refs/heads/main' }}
+        needs: [build, go-semantic-release]
+        runs-on: ubuntu-latest
+        permissions:
+            pages: write
+            id-token: write
+        environment:
+          name: github-pages
+          url: ${{ steps.deployment.outputs.page_url }}
+        steps:
+            - name: deploy site to gh pages
+              id: deployment
+              uses: actions/deploy-pages@v4
