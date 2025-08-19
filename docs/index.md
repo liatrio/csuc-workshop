@@ -1,6 +1,6 @@
 # Version Control that Works Today: Git & GitHub with CI
 
-This workshop is designed get you hands on with foundational tools leveraged across the software industry. You will, with guidance from industry professionals, apply these tools and practices to your own homework or projects and by the end, you'll have: 
+This workshop will get you hands on with foundational tools leveraged across the software industry. You, with guidance from industry professionals, will apply these tools and practices to your own homework or projects and by the end, you'll have: 
 
 - A real GitHub repository with meaningful history
 - A `.gitignore` file that keeps junk out
