@@ -104,7 +104,7 @@ Let's make sure the tools can talk to each other:
 
 This should show your GitHub username
 ```bash
-gh api user --jq .login
+gh api user | grep login
 ```
 
 This should show your Git configuration

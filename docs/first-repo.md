@@ -307,5 +307,4 @@ gh repo view --web
 
 - How does having your code on GitHub make you feel about your project?
 - What's one way this could help you with homework or group projects?
-- What would you tell a friend who says "Git is too complicated?"
 - What would you tell a friend who says "Git is too complicated"?
