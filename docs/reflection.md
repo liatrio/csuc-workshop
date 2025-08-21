@@ -5,6 +5,7 @@ Congratulations! You've completed your journey into version control and automati
 ## Mission Accomplished!
 
 Your real project now has:
+
 - Git version control
 - A proper `.gitignore` file
 - A home on GitHub
@@ -23,50 +24,50 @@ Take a few minutes to think about these questions. Discuss with a partner or wri
 ### Understanding & Knowledge
 
 1. **In your own words, how is Git different from GitHub?**
-   
-   *Hint: Think about local vs. remote, and what each tool is responsible for.*
+
+    *Hint: Think about local vs. remote, and what each tool is responsible for.*
 
 2. **What immediate value do YOU get from version control on coursework?**
-   
-   *Think about safety, collaboration, and professional development.*
+
+    *Think about safety, collaboration, and professional development.*
 
 3. **What signal does a passing CI badge send to a recruiter or teammate?**
-   
-   *Consider what it says about your coding practices and attention to quality.*
+
+    *Consider what it says about your coding practices and attention to quality.*
 
 ### Skills & Application
 
 4. **Walk through the basic Git workflow from memory:**
    
-   ```
-   git _____
-   git _____
-   git _____
-   git _____ -m "message"
-   git _____
-   ```
+    ```
+     git _____
+     git _____
+     git _____
+     git _____ -m "message"
+     git _____
+    ```
 
 5. **What's one habit you'll adopt this week?**
    
-   Examples: smaller commits, better messages, starting with .gitignore, etc.
+    Examples: smaller commits, better messages, starting with .gitignore, etc.
 
 6. **How might this change your approach to group projects?**
    
-   Think about collaboration, backup, and sharing work.
+    Think about collaboration, backup, and sharing work.
 
 ### Problem-Solving & Growth
 
 7. **What was the most challenging part of today's workshop?**
    
-   And how did you overcome it?
+    And how did you overcome it?
 
 8. **If a friend said "Git is too complicated," what would you tell them?**
    
-   What advice would you give to make it less overwhelming?
+    What advice would you give to make it less overwhelming?
 
 9. **What's one Git or GitHub feature you're curious to learn more about?**
    
-   Branches? Pull requests? Advanced workflows?
+    Branches? Pull requests? Advanced workflows?
 
 ---
 
