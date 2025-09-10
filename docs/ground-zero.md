@@ -118,20 +118,20 @@ git config --global user.email
 
 !!! warning "Missing Git Config?"
     If the git config commands return nothing, set them up:
-    
+
     ```bash
     git config --global user.name "Your Name"
     ```
-    
+
     ```bash
     git config --global user.email "your.email@example.com"
     ```
-    
+
     Use the same email associated with your GitHub account!
 
 ## 🎉 Ready to Go!
 
-If all the commands above worked, you're ready to start creating repositories! 
+If all the commands above worked, you're ready to start creating repositories!
 
 **Next Step:** [Creating Your First Repo](./first-repo.md)
 

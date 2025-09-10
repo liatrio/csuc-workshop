@@ -41,17 +41,17 @@ This creates a folder called hello-vcs with a connection to GitHub already set u
 
 !!! tip "Alternative: Using git clone"
     You can also use the traditional Git command to clone repositories:
-    
+
     Clone using git directly (requires the full URL)
     ```bash
     git clone https://github.com/YOUR-USERNAME/hello-vcs.git
     ```
-    
+
     OR if using SSH
     ```bash
     git clone git@github.com:YOUR-USERNAME/hello-vcs.git
     ```
-    
+
     Replace `YOUR-USERNAME` with your actual GitHub username. You can find the correct URL by going to your repository on GitHub and clicking the green "Code" button.
 
 ## Step 3: Add Content to Your Repository
@@ -98,7 +98,7 @@ Create your first commit (a snapshot in time)
 git commit -m "feat: initial commit with README"
 ```
 
-`-m` is short for `--message` and is used to provide a commit message. This message is what will show up in the commit history and it should be descriptive of the changes made. Avoid commit messages like `fixed bug` or `updated code` as these are not descriptive and do not provide any value to you when you are reading the commit history. If you are using VSCode's Source Control view you can leverage AI to generate commit messages by clicking the ✨ icon. 
+`-m` is short for `--message` and is used to provide a commit message. This message is what will show up in the commit history and it should be descriptive of the changes made. Avoid commit messages like `fixed bug` or `updated code` as these are not descriptive and do not provide any value to you when you are reading the commit history. If you are using VSCode's Source Control view you can leverage AI to generate commit messages by clicking the ✨ icon.
 
 !!! question "Pause & Think"
     What did `git status` show? Notice how we only added the README.md file, leaving the super-secret.env file untracked?
@@ -139,13 +139,13 @@ Starting a new project and not sure what to include in your `.gitignore`? Check 
 
 !!! info "Common .gitignore Patterns"
     `.gitignore` uses several pattern types:
-    
+
     - **Exact match**: `super-secret.env` ignores only that specific file
     - **Glob pattern**: `*.env` ignores all files ending with .env
     - **Directory**: `logs/` ignores entire directories (note the trailing slash)
     - **Negation**: `!important.log` includes a file even if it is ignored by another pattern
     - **Double asterisk**: `**/node_modules` matches node_modules in any directory depth
-    
+
 !!! success "Protection in Place"
     Now even if you run `git add .` in the future, Git will ignore the super-secret.env file!
 
@@ -160,7 +160,7 @@ git push
 
 !!! success "🎉 What Just Happened?"
     The `git push` command sent your local commits to GitHub. Since we created the repository on GitHub first and then cloned it, the connection between your local repository and GitHub was already set up. This is one of the advantages of starting with GitHub first!
-    
+
     Check it out: `gh repo view --web`
 
 ## Step 7: Verify Your Success
@@ -244,7 +244,7 @@ We will not go into these details here, but if you are using Git and you find yo
 
 Git can become much more complicated (and powerful). We are just scratching the surface here. For collaborative development, you would typically need to make use of `branches`, `merging`, `pull`, `rebase`, and many more commands.
 
-Regularly committing and pushing to a remote repository is enough to ensure your work is always safe and should become a habit. 
+Regularly committing and pushing to a remote repository is enough to ensure your work is always safe and should become a habit.
 
 **Next Adventure:** [Converting an Existing Project](./convert-project.md) or jump ahead to [GitHub Actions Setup](./github-actions.md)
 
@@ -307,4 +307,4 @@ gh repo view --web
 
 - How does having your code on GitHub make you feel about your project?
 - What's one way this could help you with homework or group projects?
-- What would you tell a friend who says "Git is too complicated"?
+- What would you tell a friend who says "Git is too complicated?"

@@ -5,7 +5,6 @@ Congratulations! You've completed your journey into version control and automati
 ## Mission Accomplished!
 
 Your real project now has:
-
 - Git version control
 - A proper `.gitignore` file
 - A home on GitHub
@@ -38,7 +37,7 @@ Take a few minutes to think about these questions. Discuss with a partner or wri
 ### Skills & Application
 
 4. **Walk through the basic Git workflow from memory:**
-   
+
     ```
      git _____
      git _____
@@ -48,25 +47,25 @@ Take a few minutes to think about these questions. Discuss with a partner or wri
     ```
 
 5. **What's one habit you'll adopt this week?**
-   
+
     Examples: smaller commits, better messages, starting with .gitignore, etc.
 
 6. **How might this change your approach to group projects?**
-   
+
     Think about collaboration, backup, and sharing work.
 
 ### Problem-Solving & Growth
 
 7. **What was the most challenging part of today's workshop?**
-   
+
     And how did you overcome it?
 
 8. **If a friend said "Git is too complicated," what would you tell them?**
-   
+
     What advice would you give to make it less overwhelming?
 
 9. **What's one Git or GitHub feature you're curious to learn more about?**
-   
+
     Branches? Pull requests? Advanced workflows?
 
 ---
