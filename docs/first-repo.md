@@ -13,10 +13,10 @@ Let's start by creating a repository on GitHub first. We'll use the GitHub CLI (
 
 Create a new GitHub repository
 ```bash
-gh repo create hello-vcs --description "My first version control project"
+gh repo create hello-vcs --public --description "My first version control project"
 ```
 
-By default, this creates a public repository that anyone can see.
+This creates a public repository that anyone can see. Switch the `--public` flag to `--private` if you want to keep it private.
 
 !!! success "What Just Happened?"
     That command created a new public repository on GitHub called "hello-vcs" and added a description to it. The repository now exists on GitHub, but not yet on your local machine.
