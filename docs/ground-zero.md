@@ -64,7 +64,7 @@ If this fails, consider configuring SSH for GitHub using the instructions below.
 
 **Why use SSH instead of HTTPS?**
 
-With HTTPS repositories, you'll need to enter your username and password (or personal access token) **every time you push code to GitHub**. This gets tedious quickly when you're working on projects regularly.
+With HTTPS repositories, you'll need to enter your credentials **every time you push code to GitHub**. As of August 13, 2021, GitHub has deprecated password authentication for HTTPS repositories. This means you'll need to use a personal access token instead. This gets tedious quickly when you're working on projects regularly.
 
 With SSH keys, you authenticate once during setup, and then Git operations just work seamlessly. No more typing credentials every time you want to push your changes!
 
