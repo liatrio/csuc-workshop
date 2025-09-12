@@ -133,7 +133,7 @@ git add .gitignore
 git commit -m "chore: add basic .gitignore with secrets protection"
 ```
 
-Think of `.gitignore` as a bouncer for your repository - it keeps the riffraff out! We don't want operating system files, build artifacts, compiled code, temporary files, or secrets cluttering our project history.
+Think of `.gitignore` as a bouncer for your repository, it keeps the riffraff out! We don't want operating system files, build artifacts, compiled code, temporary files, or secrets cluttering our project history.
 
 Starting a new project and not sure what to include in your `.gitignore`? Check out [github.com/github/gitignore](https://github.com/github/gitignore) for a list of common patterns for popular languages and tools.
 
@@ -182,7 +182,7 @@ gh repo view --web
 
 ## Checkpoint: What Did You Just Do?
 
-Take a moment to answer these questions with the people around you and a facilitator (this is not a test or a quiz - ask questions and take shots, no right or wrong answers):
+Take a moment to answer these questions with the people around you and a facilitator (this is not a test or a quiz, ask questions and take shots, no right or wrong answers):
 
 1. **What's the advantage of creating a GitHub repository first?**
 2. **What's the difference between `git add` and `git commit`?**
