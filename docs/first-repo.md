@@ -238,7 +238,7 @@ Starting with GitHub first has several advantages:
 - You don't need to manually connect your local repo to GitHub later
 - It's easier to collaborate with others from day one
 
-Did you know with Git you can become a time traveler and go back to **ANY** commit in the history of a project? This can be really powerful for debugging or recovering from a breaking change (just like sometimes you need to load an earlier save in a game because you realized you needed to bring Orphic's Hammer with you into the House of Hope before ripping the contract - BG3 fans anyone?).
+Did you know with Git you can become a time traveler and go back to **ANY** commit in the history of a project? This can be really powerful for debugging or recovering from a breaking change (just like sometimes you need to load an earlier save in a game because you realized you needed to bring The Orphic Hammer with you into the House of Hope before ripping the contract - BG3 fans anyone?).
 
 We will not go into these details here, but if you are using Git and you find yourself needing to rollback to an earlier commit, you can use `git reset <commit sha>` to do so.
 
