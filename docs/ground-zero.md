@@ -76,6 +76,7 @@ Rather than duplicate GitHub's excellent documentation, follow their official gu
 
 !!! tip "Choose Your Platform"
     Make sure to select the instructions for your operating system:
+
     - **[Mac](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent?platform=mac){target="_blank"}**
     - **[Windows](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent?platform=windows){target="_blank"}**
     - **[Linux](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent?platform=linux){target="_blank"}**
