@@ -122,14 +122,6 @@ Take a few minutes to think about these questions. Discuss with a partner or wri
 
 ---
 
-## Workshop Feedback
-
-Please take a moment to fill out this form and give us your honest feedback.
-
-[Workshop Feedback Form](https://forms.gle/27spjmDzTruk34o48){target="_blank"}
-
----
-
 ## Final Thoughts
 
 !!! quote "From the Facilitators"
